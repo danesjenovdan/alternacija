@@ -1,0 +1,383 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import url('https://fonts.googleapis.com/css?family=UnifrakturCook:700|Open+Sans:700,800|Titillium+Web:400,700&subset=latin,latin-ext');
+
+@import 'share';
+@import 'blink';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #e6e3df;
+    padding-top: 10px;
+    color: rgb(20, 20, 20);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(20, 20, 20, 0.5);
+    z-index: 2;
+}
+
+.overlay.hidden {
+    z-index: 0;
+}
+
+.logo,
+.opozori {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.CTA {
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+
+.touch {
+    .CTA {
+        display: none;
+    }
+}
+
+.alternacija-container {
+    position: absolute;
+    width: 100%;
+}
+
+.stickyspacer {
+    width: 100%;
+    height: 40px;
+}
+
+.alternacija {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 80px;
+    height: 100px;
+    z-index: 3;
+    letter-spacing: -3px;
+    // transition: all 0.4s linear;
+    background-color: #e6e3df; //rgba(230, 227, 223, 0);
+}
+
+.alternacija.scrolled {
+    // font-size: 18px;
+    // line-height: 40px;
+    // letter-spacing: -1px;
+    // height: 40px;
+    background-color: #e6e3df; //rgba(211, 208, 204, 1);
+
+    box-shadow: 0px 6px 3px -3px rgba(10, 10, 10, 0.1);
+}
+
+.takemeup {
+    cursor: pointer;
+}
+
+.oprojektu {
+    margin: auto;
+    margin-top: 170px;
+    max-width: 780px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.tvitrow {
+    margin-bottom: 80px;
+}
+
+.tvit {
+    margin: auto;
+    border: 5px solid #d8d7d4;
+    cursor: pointer;
+}
+
+.disclaimer-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 800;
+    color: rbg(20, 20, 20);
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+    background-color: #e6e3df;
+    width: 250px;
+    padding: 30px;
+    position: fixed;
+    left: 35px;
+    bottom: 35px;
+    z-index: 3;
+
+    p:nth-child(2) {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body.naci {
+    background-color: #f2001c;
+
+    .mightywhitey {
+        color: #ffffff;
+    }
+
+    .logo,
+    .opozori,
+    .povejnaprej {
+        font-size: 24.5px;
+        font-family: 'UnifrakturCook', serif;
+        letter-spacing: 0;
+        text-transform: none;
+        line-height: 20px;
+    }
+
+    .alternacija {
+        font-family: 'UnifrakturCook', serif;
+
+        // text-transform: none;
+        font-size: 100px;
+        padding-top: 0;
+        line-height: 82px;
+
+        background-color: #f2001c;
+    }
+
+    .alternacija.scrolled {
+        // font-size: 24.5px;
+        // line-height: 40px;
+        font-family: 'UnifrakturCook', serif;
+        // letter-spacing: 0;
+        text-transform: capitalize;
+
+        background-color: #f2001c;
+    }
+
+    .oprojektu {
+        color: #ffffff;
+    }
+
+    .tvit {
+        border-color: #c20016;
+    }
+
+    .disclaimer-button {
+        font-size: 31.25px;
+        font-weight: 700;
+        font-family: 'UnifrakturCook', serif;
+    }
+}
+
+.topframe {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+.modal-body {
+    h1 {
+        font-weight: 700;
+        color: #000000;
+    }
+
+    p {
+        font-size: 16px;
+        color: #000000;
+        padding: 20px;
+    }
+
+    input {
+        font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 38px;
+        height: 40px;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .share {
+        display: none;
+    }
+
+    .disclaimer-button-mobile {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .stickyspacer {
+        height: 20px;
+    }
+
+    .alternacija {
+        font-size: 24px;
+        letter-spacing: -1px;
+        height: 55px;
+    }
+
+    .alternacija.scrolled {
+        line-height: 50px;
+        // font-size: 14px;
+    }
+
+    .alternacija.scrolled {
+        padding-top: 1px;
+    }
+
+    .oprojektu {
+        margin-top: 100px;
+    }
+
+    .tvitrow {
+        margin-bottom: 40px;
+    }
+
+    body.naci {
+        .alternacija {
+            font-size: 30px;
+            line-height: 30px;
+            padding-top: 24px;
+        }
+
+        .alternacija.scrolled {
+            line-height: 30px;
+            padding-top: 10px;
+        }
+    }
+}
+
+.mobileshare {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 800;
+    color: rbg(20, 20, 20);
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 3;
+}
+
+// loader
+.loader,
+.loader:before,
+.loader:after {
+    background: rgb(20, 20, 20);
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader {
+    text-indent: -9999em;
+    margin: 88px auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.loader:after {
+    left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0 rgb(20, 20, 20);
+        height: 4em;
+    }
+
+    40% {
+        box-shadow: 0 -2em rgb(20, 20, 20);
+        height: 5em;
+    }
+}
+
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0 rgb(20, 20, 20);
+        height: 4em;
+    }
+
+    40% {
+        box-shadow: 0 -2em rgb(20, 20, 20);
+        height: 5em;
+    }
+}
