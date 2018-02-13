@@ -2,8 +2,8 @@ var tweetcount = 1;
 var onlypublished = [];
 
 function getData() {
-    return $.getJSON('https://sheetsu.com/apis/0a827b37', function(data) {
-        $.each(data.result, function(i, o) {
+    return $.getJSON('tweets.json', function(data) {
+        $.each(data, function(i, o) {
             if (o.PUBLISHED == 'yes') {
                 onlypublished.push(o);
             }
