@@ -31,8 +31,8 @@ function generateInitial(tweets) {
         if (tweetcount % 10 !== 0) {
             if (i === tweetcount - 1) {
                 $('.tweetscomehere').append('<div class="row tvitrow"><div class="col-md-12 col-lg-10 col-lg-offset-1"><img src="images/' + tweet['PERMANENT ID'] + 'from.png" data-other-image="images/' + tweet['PERMANENT ID'] + 'to.png" data-original-image="images/' + tweet['PERMANENT ID'] + 'from.png" class="img-responsive tvit" data-toggle="modal" data-target="#mobilesharemodal"></div></div>');
-                // preload(['http://danesjenovdan.si/alternacija/images/' + String(tweet['PREMANENT ID']) + 'to.png']);
-                var imageurl = 'http://danesjenovdan.si/alternacija/images/' + tweet['PERMANENT ID'] + 'to.png';
+                // preload(['https://danesjenovdan.si/alternacija/images/' + String(tweet['PREMANENT ID']) + 'to.png']);
+                var imageurl = 'https://danesjenovdan.si/alternacija/images/' + tweet['PERMANENT ID'] + 'to.png';
                 // $.get(imageurl);
                 $.preloadImages(imageurl);
                 tweetcount = tweetcount + 1;
@@ -164,7 +164,7 @@ $(document).ready(function() {
 
     // .logo action
     $('.logo').on('click', function() {
-        window.open('http://danesjenovdan.si', '_blank');
+        window.open('https://danesjenovdan.si', '_blank');
     });
 
     // .disclaimer button hover behaviour
