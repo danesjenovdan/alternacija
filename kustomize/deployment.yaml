@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alternacija
+  labels:
+    app: alternacija
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alternacija
+  template:
+    metadata:
+      labels:
+        app: alternacija
+    spec:
+      containers:
+        - name: alternacija
+          image: alternacija
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 50Mi
+              cpu: 50m
+            limits:
+              memory: 50Mi
+              cpu: 50m
