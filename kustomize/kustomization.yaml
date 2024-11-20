@@ -8,4 +8,4 @@ resources:
 images:
   - name: alternacija
     newName: rg.fr-par.scw.cloud/djnd/alternacija
-    newTag: 'latest'
+    newTag: 'e09d0ac6221a7656ba89c2818474acce9bd61585'
